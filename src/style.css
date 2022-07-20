@@ -1,0 +1,270 @@
+:root {
+    --primary-font-family: "Nunito", sans-serif;
+    --footer-font-family: "Roboto", sans-serif;
+    --hero-color: #ffffff;
+    --primary-color: #272142;
+    --secondary-color: #662eed;
+    --step-color: #f65282;
+  }
+  body {
+    font-family: var(--primary-font-family);
+    background: var(--hero-color);
+    color: var(--primary-color);
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: var(--hero-color);
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  
+  .nav-link {
+    color: var(--primary-color) !important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  
+  .nav-link:hover {
+    color: var(--secondary-color) !important;
+  }
+  
+  #active-link {
+    color: var(--secondary-color) !important;
+  }
+  
+  h1,
+  h2 {
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  /* Homapage */
+  
+  .hero h1 {
+    font-size: 52px;
+    line-height: 58px;
+    color: var(--hero-color);
+  }
+  .hero h2 {
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--hero-color);
+  }
+  .hero {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url(../images/bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  /* Footer */
+  
+  footer {
+    height: 80px;
+    margin-top: 100px;
+    padding: 30px 60px;
+    background: #f9f7fe;
+  }
+  
+  footer p {
+    font-family: var(--footer-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 3;
+    text-align: right;
+  }
+  
+  .icons {
+    margin-left: 60px;
+  }
+  
+  .icon {
+    margin-right: 40px;
+  }
+  
+  .icons a {
+    color: var(--primary-color);
+  }
+  
+  .icons a:hover {
+    color: var(--secondary-color);
+  }
+  
+  /* About */
+  .about-section {
+    margin-bottom: 80px;
+  }
+  .about h1,
+  .colection h1,
+  .contact-header {
+    font-size: 72px;
+    line-height: 98px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  
+  .about h2 {
+    font-size: 40px;
+    line-height: 87px;
+    margin-top: 20px;
+  }
+  
+  .about p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1, 5;
+  }
+  
+  .about h3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    margin: 40px auto;
+  }
+  
+  .description h4 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 2;
+    margin-top: 10px;
+  }
+  .description p {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  
+  /* Resipes */
+  
+  .recipe-colection img {
+    display: block;
+    margin: 0 auto;
+    width: 560px;
+    margin-top: 60px;
+  }
+  
+  .recipe-colection h5,
+  .recipe p {
+    border-bottom: 1px dashed #67d5d2;
+  }
+  
+  .step {
+    color: var(--step-color);
+  }
+  
+  /* Contact */
+  
+  .contacts a {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 100px;
+    color: var(--primary-color);
+  }
+  .contacts a:hover {
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
+  
+  .conact-type {
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin-left: 20px;
+  }
+  
+  @media (max-width: 800px) {
+    .hero h1 {
+      font-size: 20px;
+      line-height: 1;
+    }
+    .hero h2 {
+      font-size: 12px;
+      line-height: 1.5;
+    }
+    .hero {
+      background-size: 200%;
+    }
+  
+    /* Footer */
+    footer {
+      height: 50px;
+      margin-top: 10px;
+      padding: 10px 10px;
+    }
+    footer p {
+      font-size: 7px;
+      line-height: 4.5;
+    }
+    .icon {
+      margin-right: 10px;
+    }
+    .icons {
+      margin-left: 10px;
+      line-height: 2;
+    }
+    footer .logo {
+      width: 50px;
+    }
+  
+    /* About */
+    .about-section {
+      margin-bottom: 40px;
+    }
+    .about h1,
+    .colection h1,
+    .contact-header {
+      font-size: 50px;
+      line-height: 1;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+    .about h2 {
+      font-size: 20px;
+      line-height: 1;
+    }
+    .about p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1;
+      margin: 0 10px;
+      /* text-align: center; */
+    }
+    .about .follow-me {
+      display: block;
+      margin: 0;
+    }
+    .favorite-recipe-card img,
+    .my-photo {
+      width: 350px;
+      display: block;
+      margin: 20px auto;
+    }
+    .description h4,
+    .description p {
+      text-align: center;
+    }
+  
+    /* Recipe */
+    .metod {
+      padding-top: 30px;
+    }
+    .recipe-colection h3 {
+      font-size: 25px;
+      line-height: 2;
+      text-align: center;
+    }
+  }
